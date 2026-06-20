@@ -39,11 +39,55 @@ li:before{content:"";position:absolute;left:20px;top:21px;width:12px;height:12px
 .hero-visual .metric{position:absolute;right:42px;bottom:42px;color:#fff;text-align:right}
 .metric strong{font-size:74px;display:block;letter-spacing:-.05em}
 .metric span{font-size:18px;opacity:.88}
-.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:36px;position:relative;z-index:1}
-.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;min-height:160px;box-shadow:0 12px 35px rgba(20,20,20,.06)}
-.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#2f3136;color:#fff;margin-bottom:14px}
-.step h3{font-size:19px;margin:0 0 8px}
-.step p{font-size:15px;line-height:1.35}
+.timeline{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:22px;
+    margin-top:40px;
+}
+
+.step{
+    flex:1;
+    min-height:280px;
+    padding:28px;
+    border-radius:24px;
+    background:#fff;
+    border:1px solid #d8d8d8;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    transition:.3s;
+}
+
+.step:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.step.wide{
+    flex:1.6;
+}
+
+.step b{
+    display:block;
+    color:#E51C4B;
+    font-size:28px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.step h3{
+    font-size:34px;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.step p{
+    font-size:24px;
+    line-height:1.5;
+    color:#444;
+}
 .flow-container{
     display:flex;
     justify-content:center;
