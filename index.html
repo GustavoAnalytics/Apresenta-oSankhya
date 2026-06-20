@@ -134,7 +134,52 @@ li:before{content:"";position:absolute;left:20px;top:21px;width:12px;height:12px
     font-size:18px;
     line-height:1.5;
 }
+/* Slide Fluxo de Aprovação */
 
+.aprovacao-flow{
+    display:flex;
+    justify-content:space-between;
+    gap:18px;
+    margin-top:40px;
+}
+
+.aprovacao-flow .card{
+    flex:1;
+    height:535px;
+    padding:38px 36px;
+    border:1px solid #d9d9d9;
+    border-radius:32px;
+    background:#fff;
+}
+
+.aprovacao-flow .numero{
+    font-size:54px;
+    font-weight:700;
+    color:#E91E63;
+    margin-bottom:60px;
+}
+
+.aprovacao-flow .titulo{
+    font-size:34px;
+    font-weight:700;
+    color:#20232D;
+    line-height:1.15;
+    margin-bottom:28px;
+}
+
+.aprovacao-flow .descricao{
+    font-size:22px;
+    line-height:1.6;
+    color:#4A5568;
+}
+
+.aprovacao-flow .card:nth-child(5) .titulo{
+    font-size:32px;
+}
+
+.aprovacao-flow .card:nth-child(5) .descricao{
+    font-size:20px;
+}
 .pj-timeline{grid-template-columns:1fr 1fr 1.45fr 1fr 1fr 1fr;gap:12px}
 .pj-timeline .step{min-height:160px;padding:18px}
 .pj-timeline .step b{display:block;width:auto;height:auto;border-radius:0;background:transparent;color:#e11d48;margin-bottom:12px;font-size:16px;font-weight:900;line-height:1.1}
